@@ -1,69 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Seu Nome</title>
-  <meta name="description" content="Portfólio criativo — Sobre + Projetos" />
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Phelipe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">Phe</div>
-        <div>
-          <div class="name">Phelipe</div>
-          <div style="color:var(--muted);font-size:13px">Desenvolvedor</div>
+    <div class="main">
+        <h1>Olá, bem-vindo ao meu portfólio!</h1>
+        <img src="assets/image.png" id="foto-perfil" alt="Foto de perfil de Phelipe">
+    </div>
+
+    <div class="info">
+        <h2>Sobre mim</h2>
+        <p>Meu nome é <strong>Phelipe</strong>, sou desenvolvedor front-end e o atual CEO & Co-fundador da <a href="https://codiva10.github.io/Codiva" target="_blank">Codiva</a>! Trabalho com <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Além disso, desenvolvi projetos nos quais aprendi a utilizar <strong>MySQL</strong> e <strong>Firebase</strong>.</p>
+        <h3>Minhas redes</h3>
+        <p>Caso queira entrar em contato comigo, é só me chamar em uma das redes sociais abaixo:</p>
+        <a href="https://www.instagram.com/09phe_" target="_blank">
+            <button><i class="fab fa-instagram"></i> Instagram</button>
+        </a>
+        <a href="https://www.linkedin.com/in/phelipe-r-b0a72b382" target="_blank">
+            <button><i class="fab fa-linkedin"></i> LinkedIn</button>
+        </a>
+        <a href="https://github.com/phekkj" target="_blank">
+            <button><i class="fab fa-github"></i> GitHub</button>
+        </a>
+    </div>
+
+    <div id="projetos" class="projetos">
+        <div class="projetos-principais">
+            <h2>Meus principais projetos</h2>
+
+            <div class="codiva">
+                <h3 id="codiva-name">Codiva</h3>
+                <a href="https://codiva10.github.io/Codiva/" target="_blank">
+                    <img src="assets/site-codiva.png" alt="Imagem do site da Codiva">
+                </a>
+                <p>A <strong>Codiva</strong> é uma empresa de desenvolvimento web que ajuda pessoas e negócios a conquistarem presença online!</p>
+            </div>
+
+            <div class="psicodependencia">
+                <h3>Psicodependência</h3>
+                <a href="https://github.com/arthurmullerg/PSYCHODEPENDENCE" target="_blank">
+                    <img src="assets/psicodependencia.png" alt="Imagem do projeto Psicodependência">
+                </a>
+                <p><strong>Psicodependência</strong> é uma aplicação web criada para auxiliar psicólogos na avaliação da dependência em redes sociais. Eu e meu grupo apresentamos esse projeto em várias feiras científicas: <strong>X FITEC (🥇)</strong>, <strong>FEBIC</strong>, <strong>Fórum de Iniciação Científica da Rede Sinodal (🥇)</strong>, <strong>MostraPOA</strong> e <strong>MOSTRATEC</strong>!</p>
+            </div>
         </div>
-      </div>
 
-      <div class="top-links">
-        <a class="link" href="https://github.com/phekkj">GitHub</a>
-        <a class="inst" href="https://linkbio.co/709091518AtcQ?utm_media=biolink&utm_source=instabio" target="_blank" rel="noopener">Info</a>
-      </div>
-    </header>
+        <div class="Outros-projetos">
+            <h2>Outros projetos</h2>
 
-    <main>
-      <section class="hero" aria-labelledby="sobre">
-        <div class="about">
-          <h1 id="sobre">Ola!</h1>
-          <p>Sou um desenvolvedor front-end. Possuo conheciment em HTML, CSS, JavaScript. Atualmente sou tecnico em informatica, e pretendo seguir na faculdade de desnvolvimento de software.</p>
-          <h3>Contato:</h3>
-          <p>
-            Caso queira entrar em contato comigo, envie um email para: phelipepereirar@gmail.com. Ou clique no "Info" e acesse meu linkbio com mais redes sociais.
-          </p>
-          <div class="cta-row">
-            <button class="btn" href="#projects-grid">Ver Projetos</button>
-          </div>
+            <div class="climasim">
+                <a href="#" target="_blank">
+                    <img src="assets/climaSim.png" alt="Imagem do projeto ClimaSim">
+                </a>
+            </div>
+
+            <div class="clickergame">
+                <a href="#" target="_blank">
+                    <img src="assets/clickergameimg.png" alt="Imagem do projeto Clicker Game">
+                </a>
+            </div>
         </div>
-
-        <div class="photo-wrap">
-          <div class="photo">
-            <img src="assets/image.png" alt="Sua foto" />
-          </div>
-
-      </section>
-
-      <section class="projects" id="projects">
-        <h2 id="tProjetos">Projetos</h2>
-
-        <div class="projects-grid" id="projectsGrid">
-          <div class="project-card" data-link="https://phekkj.github.io/ClimaSim/">
-            <img src="assets/climaSim.png" alt="Projeto 1" />
-            <div class="project-overlay"><div class="project-title">ClimaSim</div></div>
-          </div>
-
-          <div class="project-card" data-link="https://phekkj.github.io/ClickGame/">
-            <img src="assets/clickergameimg.png" alt="Projeto 2" />
-            <div class="project-overlay"><div class="project-title">Clicker Game</div></div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-  </div>
-
-  <script src="script.js" defer></script>
+    </div>
 </body>
 </html>
